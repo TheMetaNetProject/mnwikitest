@@ -1,0 +1,156 @@
+<noinclude>
+This is the "Metaphor" form.
+To create a page with this form, enter the page name below;
+if a page with that name already exists, you will be sent to a form to edit that page.
+
+
+{{#forminput:form=Metaphor|autocomplete on category=Metaphor}}
+
+</noinclude><includeonly>{{#css:
+   .enformfield {
+       direction: ltr;
+       text-align: left;
+       
+   }
+   input.enformfield {
+       direction: ltr;
+       text-align: left;
+       
+   }
+   textarea.enformfield {
+       direction: ltr;
+       text-align: left;
+       
+   }
+
+}}<div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"></div>
+{{{for template|Metaphor}}}
+{| class="formtable"
+|- {{#ifeq:{{Lang|}}|en|style="display:none;"|}}
+! Name Gloss:
+| {{{field|Name gloss|property=Metaphor.Name gloss|class=enformfield}}}
+|-
+! Aliases: {{#info: Note: the name of the metaphor should be entered as an alias.}}
+| {{{field|Aliases|holds template}}}
+|-
+! Comments:
+| {{{field|Comments|property=Metaphor.Comments}}}
+|-
+! Tags:
+| {{{field|Tags|property=Tag|input type=text with autocomplete}}}
+|-
+! Family(s):
+| {{{field|Family|property=Metaphor.Family|values from property=Metaphor.Family|input type=text with autocomplete}}}
+|-
+! Metaphor Level:
+| {{{field|Metaphor Level|property=Metaphor.Level}}}
+|-
+! Metaphor Type:
+| {{{field|Metaphor Type|property=Metaphor.Type|list}}}
+|-
+! Experiential Basis:
+| {{{field|Experiential basis|property=Metaphor.Experiential basis}}}
+|-
+! Source Schema:
+| {{{field|Source schema|property=Metaphor.Source schema|values from category=Schema}}}
+|-
+! Target Schema:
+| {{{field|Target schema|property=Metaphor.Target schema|values from category=Schema}}}
+|-
+! Mappings:
+| {{{field|Mappings|holds template}}}
+|-
+! Related metaphors:
+| {{{field|Related metaphors|holds template}}}
+|-
+! Entailments:
+| {{{field|Entailments|holds template}}}
+|-
+! Examples:
+| {{{field|Examples|holds template}}}
+|-
+! Entered by:
+| {{{field|Entered by|property=Entered by|input type=text with autocomplete}}}
+|-
+! Last reviewed by:
+| {{{field|Last reviewed by|property=Last reviewed by|input type=text with autocomplete}}}
+|-
+! Status:
+| {{{field|Status|property=Status|list}}}
+|}
+
+{{{field|Investigated for|property=Metaphor.Investigated for|default={{Lang|en}}|hidden}}}
+
+{{{end template}}}
+{{{for template|Metaphor.Alias|multiple|label=Aliases|embed in field=Metaphor[Aliases]}}}
+'''Alias:''' {{{field|Metaphor.Alias.Name}}}
+
+'''Provenance:''' {{{field|Metaphor.Alias.Provenance|property=Metaphor.Alias.Provenance|values from property=Metaphor.Alias.Provenance|input type=text with autocomplete}}}
+
+'''Page number:''' {{{field|Metaphor.Alias.Page no}}}
+
+{{{end template}}}
+
+{{{for template|Mapping|multiple|label=Mappings|embed in field=Metaphor[Mappings]}}}
+'''Target Role:''' {{{field|Target|property=Mapping.Target}}}
+
+'''Source Role:''' {{{field|Source|property=Mapping.Source}}}
+
+'''Comment:''' {{{field|Comment|property=Mapping.Comment}}}
+
+{{{end template}}}
+
+{{{for template|Related metaphor|multiple|label=Related Metaphors|embed in field=Metaphor[Related metaphors]}}}
+
+'''Current Metaphor:''' {{PAGENAME}}
+
+'''Type of Relation:''' {{{field|Related metaphor.Relation type|property=Related metaphor.Relation type}}}
+
+'''Related Metaphor:''' {{{field|Related metaphor.Name|property=Related metaphor.Name|values from category=Metaphor}}}
+
+'''Description of Relation:''' {{{field|Related metaphor.Description}}}
+
+{{{end template}}}
+
+{{{for template|Entailment|multiple|label=Entailments|embed in field=Metaphor[Entailments]}}}
+'''Target Entailment:''' {{{field|Entailment.Target entailment|property=Entailment.Target entailment}}}
+
+'''Source Inference:''' {{{field|Entailment.Source inference}}}
+
+'''Type of Inferential Structure:''' {{{field|Entailment.Type|property=Entailment.Type}}}
+
+'''Entailed metaphor(s):''' {{{field|Entailment.Entailed metaphors|input type=text with autocomplete|values from category=Metaphor}}}
+
+{{{end template}}}
+
+{{{for template|Example|multiple|label=Examples|embed in field=Metaphor[Examples]}}}
+
+{{{field|Example.Language|property=Example.Language|input type=text|default={{Lang|en}}|hidden}}}
+
+'''Text:''' {{{field|Example.Text|property=Example.Text|class=metaex|rows=3}}}
+
+{{#ifeq:{{Lang|}}|en||
+'''Gloss:''' {{{field|Example.Gloss|property=Example.Gloss|class=enformfield|rows=3}}}
+
+'''English translation:''' {{{field|Example.English translation|property=Example.English translation|class=enformfield|rows=3}}}
+
+}}
+'''Provenance:''' {{{field|Example.Provenance|property=Example.Provenance}}}
+
+'''Annotation:''' {{{field|Example.Annotation|property=Example.Annotation|rows=3}}}
+
+'''Comments:''' {{{field|Example.Comments|property=Example.Comments|rows=3}}}
+
+{{{end template}}}
+
+'''Free text:'''
+
+{{{standard input|free text|rows=10}}}
+
+
+{{{standard input|summary}}}
+
+{{{standard input|minor edit}}} {{{standard input|watch}}}
+
+{{{standard input|save}}} {{{standard input|preview}}} {{{standard input|changes}}} {{{standard input|cancel}}}
+</includeonly>

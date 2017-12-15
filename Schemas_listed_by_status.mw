@@ -1,0 +1,24 @@
+= in development =
+{{#ask: [[Category:Schema]] [[Status::in development]]
+| format=ul
+}}
+
+= proposed =
+{{#ask: [[Category:Schema]] [[Status::proposed]]
+| format=ul
+}}
+
+= reviewed =
+{{#ask: [[Category:Schema]] [[Status::reviewed]]
+| format=ul
+}}
+
+= experimentally validated  =
+{{#ask: [[Category:Schema]] [[Status::experimentally validated ]]
+| format=ul
+}}
+
+= contested =
+{{#ask: [[Category:Schema]] [[Status::contested]]
+| format=ul
+}}

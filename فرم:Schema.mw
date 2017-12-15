@@ -1,0 +1,148 @@
+<noinclude>
+This is the "Schema" form.
+To create a page with this form, enter the page name below;
+if a page with that name already exists, you will be sent to a form to edit that page.
+
+
+{{#forminput:form=Schema|autocomplete on category=Schema}}
+
+</noinclude><includeonly>{{#css:
+
+   .enformfield {
+       direction: ltr;
+       text-align: left;
+       
+   }
+   input.enformfield {
+       direction: ltr;
+       text-align: left;
+       
+   }
+   textarea.enformfield {
+       direction: ltr;
+       text-align: left;
+       
+   }
+
+}}<div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"></div>
+{{{for template|Schema}}}
+{| class="formtable"
+|- {{#ifeq:{{Lang|}}|en|style="display:none;"|}}
+! Name Gloss:
+| {{{field|Name gloss|property=Schema.Name gloss|class=enformfield}}}
+|-
+! Closest FrameNet frame(s):
+| {{{field|FrameNet frame|property=Schema.FrameNet frame}}}
+|-
+! Other Aliases:
+| {{{field|Other aliases|property=Schema.Alias}}}
+|-
+! Comments:
+| {{{field|Comments|property=Schema.Comments}}}
+|-
+! Family(s):
+| {{{field|Family|property=Schema.Family}}}
+|-
+! Tags:
+| {{{field|Tags}}}
+|-
+! Type:
+| {{{field|Type|property=Schema.Type}}}
+|-
+! Cultural Information:
+| {{{field|Cultural information|property=Schema.Cultural information}}}
+|-
+! Status:
+| {{{field|Status|property=Status|list}}}
+|-
+! Entered by:
+| {{{field|Entered by}}}
+|-
+! Last reviewed by:
+| {{{field|Last reviewed by}}}
+|-
+! Roles:
+| {{{field|Roles|holds template}}}
+|-
+! Related schemas:
+| {{{field|Related schemas|holds template}}}
+|-
+! Bindings:
+| {{{field|Bindings|holds template}}}
+|-
+! Inferences:
+| {{{field|Inferences|holds template}}}
+|-
+! Relevant LUs:
+| {{{field|Relevant LUs|holds template}}}
+|}
+
+{{{field|Applicability|property=Schema.Applicability|default={{Lang|en}}|hidden}}}
+
+{{{end template}}}
+
+{{{for template|Role|multiple|label=Roles|embed in field=Schema[Roles]}}}
+{| class="formtable"
+! Name:
+| {{{field|Role.Name}}}
+|- {{#ifeq:{{Lang|}}|en|style="display:none;"|}}
+! Gloss:
+| {{{field|Role.Name gloss|property=Role.Name gloss|class=enformfield}}}
+|-
+! Type:
+| {{{field|Role.Type}}}
+|-
+! Definition:
+| {{{field|Role.Definition}}}
+|-
+! FrameNet Role:
+| {{{field|Role.FrameNet role}}}
+|}
+{{{end template}}}
+
+{{{for template|Related schema|multiple|label=Related Schemas|embed in field=Schema[Related schemas]}}}
+'''Current Schema:''' {{PAGENAME}}
+
+'''Relation Type:''' {{{field|Related schema.Relation type|property=Related schema.Relation type}}}
+
+'''Related Schema:''' {{{field|Related schema.Name|property=Schema|values from category=Schema}}}
+
+'''Description:''' {{{field|Related schema.Description}}}
+
+{{{end template}}}
+
+{{{for template|Binding|multiple|label=Bindings|embed in field=Schema[Bindings]}}}
+'''Local Role:''' {{{field|Binding.Local role}}}
+
+'''Bound Role:''' {{{field|Binding.Bound role}}}
+
+{{{end template}}}
+
+{{{for template|Inference|multiple|label=Inferences|embed in field=Schema[Inferences]}}}
+'''Description of Inference:''' {{{field|Inference.Description|property=Inference.Description}}}
+
+'''Type of Inference:''' {{{field|Inference.Type|property=Inference.Type}}}
+
+{{{end template}}}
+
+{{{for template|LUs|label=Relevant LUs|multiple|label=Relevant LUs|embed in field=Schema[Relevant LUs]}}}
+
+{{{field|LUs.Language|property=LUs.Language|input type=text|default={{Lang|en}}|hidden}}}
+
+{| class="formtable"
+! Lemma:
+| {{{field|LUs.Lemmas|property=LUs.Lemmas}}}
+|}
+{{{end template}}}
+
+'''Free text:'''
+
+{{{standard input|free text|rows=10}}}
+
+
+{{{standard input|summary}}}
+
+{{{standard input|minor edit}}} {{{standard input|watch}}}
+
+{{{standard input|save}}} {{{standard input|preview}}} {{{standard input|changes}}} {{{standard input|cancel}}}
+</includeonly>

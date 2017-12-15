@@ -1,0 +1,20 @@
+{{TOC
+|limit=2
+}}
+= Related metaphors with no relation type specified =
+{{#ask:[[Category:Schema]] [[Related schema::+]]
+| ?Related schema | +index=1
+| format=template
+| template=Missing relation type
+| limit=5000
+}}
+
+= Schemas marked as frames but with no cultural information =
+{{Unsetprop|badfr|Schema| Schema.Cultural information|[[ Schema.Type::Frame]]}}
+<ul>{{#arrayprint:badfr|<br/>|@|<li> [[@]]}}</ul>
+
+= Schemas marked as both Cog and Frame =
+{{#ask: [[Category:Schema]] [[ Schema.Type::Cog]] [[ Schema.Type::Frame]]
+| format=ul
+| limit=2000
+}}

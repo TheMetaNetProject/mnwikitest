@@ -1,0 +1,12 @@
+<div class="gviztab">
+{{#relationsgraph:metarelsgraph||{{#ask: [[Category:Schema]]
+| ?Related schema
+| format=array
+| sep= <SEP>
+}}||gv|||{{#ask: [[Category:Metaphor]]
+| ?Metaphor.Source schema
+| ?Metaphor.Target schema
+| format=array
+| sep= <SEP>
+}}}}
+</div>

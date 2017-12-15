@@ -1,0 +1,30 @@
+{{TOC
+| limit=2
+}}
+
+Total number of Schema pages: {{#ask: [[Category:Schema]] | format=count}}
+
+= Manually Analyzed Schemas =
+Create or edit a Schema: {{#forminput:form=Schema|autocomplete on namespace=Schema|namespace=Schema}}
+
+Total number of Schema pages: {{#ask: [[Category:Schema]] [[:Schema:+]] | format=count}}
+{{#ask: [[Category:Schema]] [[:Schema:+]]
+|?Schema.Name gloss
+|format=category
+|template=Glossed category item
+|limit=1000
+}}
+
+= Automatically Extracted Schemas =
+Total number of Schema pages: {{#ask: [[Category:Schema]] [[:AutoSchema:+]] | format=count}}
+
+{{#ask: [[Category:Schema]] [[:AutoSchema:+]]
+|?Schema.Name gloss
+|format=category
+|template=Glossed category item
+|limit=1000
+}}
+[[en:List of all Schemas]]
+[[es:List of all Schemas]]
+[[fa:List of all Schemas]]
+[[ru:List of all Schemas]]

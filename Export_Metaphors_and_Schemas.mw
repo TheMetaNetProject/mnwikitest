@@ -1,0 +1,11 @@
+{{#arraydefine: exportlist|{{#ask: [[Category:Metaphor||Schema]]
+| format=list
+| link=none
+| limit=1000
+|}}}}
+<div id="metanetexportowl">
+[[Special:ExportRDF|Click to export]]
+<p class="exportlist" style="display:none">
+{{#arrayprint: exportlist|,|}}
+</p>
+</div>

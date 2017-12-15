@@ -1,0 +1,8 @@
+{{Unsetpropnns|topfams|Schema family|Schema subfamily of}}
+{{#loop: i
+| 0
+| {{#arraysize:topfams}}
+| <nowiki/>
+{{#vardefine:fam|{{#arrayindex:topfams|{{#var:i}}}}}}
+{{Schema family tree|{{#var:fam}}|userparam=1}}
+}}

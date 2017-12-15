@@ -1,0 +1,79 @@
+The purpose of this page is to keep track of Metaphors that may be missing necessary information
+
+= No source schema specified =
+{{Unsetprop|missingsrc|Metaphor| Metaphor.Source schema|}}
+<ul>
+{{#arrayprint: missingsrc ||@ |<li> [[@]] }}
+</ul>
+
+= No target schema specified =
+{{Unsetprop|missingtg|Metaphor| Metaphor.Target schema|}}
+<ul>
+{{#arrayprint: missingtg ||@ |<li> [[@]] }}
+</ul>
+
+= No status specified =
+{{Unsetprop|missingstatus|Metaphor|Status|}}
+<ul>
+{{#arrayprint: missingstatus ||@ |<li> [[@]] }}
+</ul>
+
+= No role mappings defined =
+{{Unsetprop|missingrmaps|Metaphor|Mapping|}}
+<ul>
+{{#arrayprint: missingrmaps ||@ |<li> [[@]] }}
+</ul>
+
+= No aliases defined =
+{{Unsetprop|missingalias|Metaphor| Metaphor.Alias|}}
+<ul>
+{{#arrayprint: missingalias ||@ |<li> [[@]] }}
+</ul>
+
+= Metaphor type not specified =
+{{Unsetprop|missingtype|Metaphor| Metaphor.Type|}}
+<ul>
+{{#arrayprint: missingtype ||@ |<li> [[@]] }}
+</ul>
+
+= Metaphor level not specified =
+{{Unsetprop|missinglevel|Metaphor| Metaphor.Level|}}
+<ul>
+{{#arrayprint: missinglevel ||@ |<li> [[@]] }}
+</ul>
+
+= Entered by not specified =
+{{Unsetprop|missingeb|Metaphor|Entered by|}}
+<ul>
+{{#arrayprint: missingeb ||@ |<li> [[@]] }}
+</ul>
+
+= No entailments defined =
+{{Unsetprop|missingent|Metaphor|Entailment|}}
+<ul>
+{{#arrayprint: missingent ||@ |<li> [[@]] }}
+</ul>
+
+= No examples entered =
+{{Unsetprop|missingex|Metaphor|Example|}}
+<ul>
+{{#arrayprint: missingex ||@ |<li> [[@]] }}
+</ul>
+
+= No related metaphors entered =
+{{Unsetprop|missingrm|Metaphor|Related metaphor|}}
+<ul>
+{{#arrayprint: missingrm ||@ |<li> [[@]] }}
+</ul>
+
+= No lexical units entered =
+{{Unsetprop|missinglu|Metaphor|LUs|}}
+<ul>
+{{#arrayprint: missinglu ||@ |<li> [[@]] }}
+</ul>
+
+= No languages investigated for =
+{{Unsetprop|missinginv|Metaphor| Metaphor.Investigated for|}}
+<ul>
+{{#arrayprint: missinginv ||@ |<li> [[@]] }}
+</ul>

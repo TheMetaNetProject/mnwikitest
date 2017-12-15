@@ -1,0 +1,15 @@
+{{TOC
+|limit=2
+}}
+
+= Cogs =
+
+{{#ask:[[Category:Schema]] [[ Schema.Type::Cog]]
+| format=category
+}}
+
+= Frames =
+
+{{#ask:[[Category:Schema]] [[ Schema.Type::Frame]]
+| format=category
+}}
